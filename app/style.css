@@ -7,3 +7,7 @@ tr:nth-child(odd){
     background-color: lightgrey;
     border-color: lightgrey;
 }
+
+td {
+    text-align: center;
+}
