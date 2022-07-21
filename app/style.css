@@ -5,7 +5,7 @@ tr {
 
 tr:nth-child(odd){
     background-color: lightgrey;
-    border-color: lightgrey;
+    border-color: black;
 }
 
 td {

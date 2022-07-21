@@ -49,10 +49,11 @@ $projects = get_projects($number_of_pages);
 </head>
 
 <body dir="rtl">
-<form method="GET"> 
-<input type="number" max="100", name="pages", value="5">
-<input type="submit">
-</form>
+    <h1>Projects From Ponisha</h1>
+    <form method="GET">
+        <input type="number" max="100" , name="pages" , value="5">
+        <input type="submit">
+    </form>
     <table>
         <thead>
             <th>title</th>
