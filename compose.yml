@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    build: ./
+    image: dwb1software/freelance_crawler:latest
     ports:
       - 6311:80
     volumes:
