@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  app:
+    build: ./
+    ports:
+      - 6311:80
+    volumes:
+      - freelancer_crawler_app_volume:/var/www/app
+    networks:
+      - freelancer_crawler_app_network
+
+  php-fpm:
+    image: php:8.1-fpm
+    volumes:
+      - type: volume
+        source: freelancer_crawler_app_volume
+        target: /var/www/app
+        volume: 
+          nocopy: true
+    networks:
+      - freelancer_crawler_app_network
+
+
+volumes:
+  freelancer_crawler_app_volume:
+
+networks:
+  freelancer_crawler_app_network:
